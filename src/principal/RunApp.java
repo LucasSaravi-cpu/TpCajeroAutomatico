@@ -3,7 +3,8 @@ package principal;
 import java.math.BigDecimal;
 
 import controlador.ATM;
-import modelo.Billetero;
+import modelo.atm.Billetero;
+import modelo.usuario.Usuario;
 
 public class RunApp {
 
@@ -11,6 +12,13 @@ public class RunApp {
 		
 		
 		ATM atm = new ATM(1234,"Colon y independencia",false);
+		
+		Usuario usuario1 = new Usuario (1234,"Lucas","Saravi");
+		Usuario usuario2 = new Usuario (1234,"Sinun","Mango");
+		Usuario usuario3 = new Usuario (1234,"Elmillo","Nario");
+		
+		
+		
 		
 		
 		Billetero billetero1 = new Billetero(new BigDecimal("500"),10000);

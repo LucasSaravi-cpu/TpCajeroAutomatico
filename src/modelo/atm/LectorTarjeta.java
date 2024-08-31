@@ -1,4 +1,4 @@
-package modelo;
+package modelo.atm;
 
 public class LectorTarjeta {
 	

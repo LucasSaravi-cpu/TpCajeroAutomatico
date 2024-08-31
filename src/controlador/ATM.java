@@ -1,13 +1,12 @@
 package controlador;
 
-import java.time.Month;
 import java.util.ArrayList;
 
-import modelo.Banco;
-import modelo.Billetero;
-import modelo.LectorTarjeta;
-import modelo.ReconocedorBilletes;
-import modelo.Tarifa;
+import modelo.atm.Billetero;
+import modelo.atm.LectorTarjeta;
+import modelo.atm.ReconocedorBilletes;
+import modelo.banco.Banco;
+import modelo.transaccion.Tarifa;
 
 public class ATM {
 
