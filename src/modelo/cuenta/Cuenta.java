@@ -36,8 +36,44 @@ public abstract class Cuenta {
 
 
 
+	public BigInteger getCBU() {
+		return CBU;
+	}
+
+
+
+	public void setCBU(BigInteger cBU) {
+		CBU = cBU;
+	}
+
+
+
+	public BigDecimal getSaldo() {
+		return saldo;
+	}
+
+
+
+	public void setSaldo(BigDecimal saldo) {
+		this.saldo = saldo;
+	}
+
+
+
+	public float getImporteDebOtroBanco() {
+		return importeDebOtroBanco;
+	}
+
+
+
+	public void setImporteDebOtroBanco(float importeDebOtroBanco) {
+		this.importeDebOtroBanco = importeDebOtroBanco;
+	}
+
+
+
 	public abstract String tipoCuenta();
-    public abstract BigDecimal GetSaldo();
+    public abstract BigDecimal calcularSaldo();
     
 
 }

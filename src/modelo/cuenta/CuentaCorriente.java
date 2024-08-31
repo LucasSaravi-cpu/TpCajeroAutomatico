@@ -36,17 +36,15 @@ public class CuentaCorriente extends Cuenta {
 
 
 
-	@Override
-	public String tipoCuenta() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	 @Override
+	    public String tipoCuenta() {
+	        return "Cuenta Corriente";
+	    }
 
-	@Override
-	public BigDecimal GetSaldo() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	    @Override
+	    public BigDecimal calcularSaldo() {
+	        return getSaldo().add(descubierto); // Calcula el saldo disponible considerando el descubierto
+	    }
 	
 	
 	

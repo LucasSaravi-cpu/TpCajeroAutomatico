@@ -14,8 +14,7 @@ public class RunApp {
 		ATM atm = new ATM(1234,"Colon y independencia",false);
 		
 		Usuario usuario1 = new Usuario (1234,"Lucas","Saravi");
-		Usuario usuario2 = new Usuario (1234,"Sinun","Mango");
-		Usuario usuario3 = new Usuario (1234,"Elmillo","Nario");
+	
 		
 		
 		

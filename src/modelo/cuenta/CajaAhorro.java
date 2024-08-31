@@ -48,17 +48,15 @@ public class CajaAhorro extends Cuenta {
 
 
 
-	@Override
-	public String tipoCuenta() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	 @Override
+	    public String tipoCuenta() {
+	        return "Caja de Ahorro";
+	    }
 
-	@Override
-	public BigDecimal GetSaldo() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	    @Override
+	    public BigDecimal calcularSaldo() {
+	        return getSaldo(); // Puede ser modificado según los cálculos adicionales
+	    }
 	
 	
 

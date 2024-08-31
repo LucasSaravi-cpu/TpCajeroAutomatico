@@ -14,17 +14,15 @@ public class CuentaSueldo extends CajaAhorro {
 	}
 
 	
-	@Override
-	public String tipoCuenta() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	  @Override
+	    public String tipoCuenta() {
+	        return "Cuenta de Sueldo";
+	    }
 
-	@Override
-	public BigDecimal GetSaldo() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	    @Override
+	    public BigDecimal calcularSaldo() {
+	        return getSaldo(); // Puede ser modificado según los cálculos adicionales
+	    }
 	
 	
 
