@@ -11,6 +11,7 @@ import modelo.transaccion.Tarifa;
 public class ATM {
 
 	private int ID;
+	
     private String ubicacion;
     private boolean modoMantenimiento;
     private ArrayList<Banco> listaBancos;
