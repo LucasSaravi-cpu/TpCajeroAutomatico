@@ -20,6 +20,7 @@ public class RunApp {
 		
 		Usuario usuario1 = new Usuario (1234,"Lucas","millo");
 	    Usuario usuario2 = new Usuario(4569,"Loa","Acade");
+	    Usuario usuario3 = new Usuario(7894,"car","ton");
 	    
 	    TarjetaATM tarjeta1 = new TarjetaATM(usuario1,new BigInteger("789654"),1234,true);
 	    TarjetaATM tarjeta2 = new TarjetaATM(usuario2,new BigInteger("578548"),1234,true);
