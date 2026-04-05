@@ -22,11 +22,12 @@ public class ATM {
    
 
 
-	public ATM(int iD, String ubicacion, boolean modoMantenimiento) {
+	public ATM(int iD, String ubicacion, boolean modoMantenimiento,Banco administrador) {
 		super();
 		this.ID = iD;
 		this.ubicacion = ubicacion;
 		this.modoMantenimiento = modoMantenimiento;
+		this.admistrador = administrador;
 	}
 
 	public int getID() {

@@ -2,31 +2,42 @@ package modelo.banco;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.List;
 
 import modelo.atm.TarjetaATM;
 import modelo.cuenta.Cuenta;
+import modelo.usuario.Usuario;
 
 public class Banco {
 	
 	private String nombre;
 	private BigInteger minRango;
 	private BigInteger maxRango;
-	private ArrayList<TarjetaATM> tarjetas;
+	private List<TarjetaATM> tarjetas;
+	private List <Usuario> clientes;
 	
 	
 	
-	
-	
+
 	public Banco(String nombre, BigInteger minRango, BigInteger maxRango) {
 		super();
 		this.nombre = nombre;
 		this.minRango = minRango;
 		this.maxRango = maxRango;
 		this.tarjetas = new ArrayList<TarjetaATM>();
+		this.clientes = new ArrayList<Usuario>();
+		
 	}
 
+	 public void agregarTarjetaATM(TarjetaATM tarjeta) {
+	        tarjetas.add(tarjeta);
+	    }
 
+	 public void agregarUsuario(Usuario usuario) {
+	        clientes.add(usuario);
+	    }
 
+	
 
 
 	public String getNombre() {
@@ -76,16 +87,31 @@ public class Banco {
 
 
 
-
-	public ArrayList<TarjetaATM> getTarjetas() {
-		return tarjetas;
+	public void setTarjetas(ArrayList<TarjetaATM> tarjetas) {
+		this.tarjetas = tarjetas;
 	}
 
 
 
 
 
-	public void setTarjetas(ArrayList<TarjetaATM> tarjetas) {
+	public List<Usuario> getUsuarios() {
+		return clientes;
+	}
+
+
+
+
+
+	public void setUsuarios(List<Usuario> usuarios) {
+		this.clientes = usuarios;
+	}
+
+
+
+
+
+	public void setTarjetas(List<TarjetaATM> tarjetas) {
 		this.tarjetas = tarjetas;
 	}
 
